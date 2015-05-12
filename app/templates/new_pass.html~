@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% from "macro.html" import render_field %}
+
+{% block content%}
+
+<legend style="text-align:center;margin-top:20px;">Tu contrase&ntilde;a ha caducado</legend>
+<br>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Por favor crea una nueva contrase&ntilde;a</h3>
+        </div>
+        <div class="panel-body">
+        	<p></p>
+
+        	<p><strong>NO</strong> utilices contrase&ntilde;as usadas para otros servicios</p>
+
+        	<p><strong>NO</strong> utilices esta contrase&ntilde;a para otros servicios.</p>
+        	<br>
+
+          <form method="POST" action=".">
+            <fieldset>
+
+						{{ form.csrf_token }}
+						{{ render_field(form.password, class="form-control", placeholder="Nueva Contrase&ntilde;a") }}
+						{{ render_field(form.confirm, class="form-control", placeholder="Confirmar")}}
+
+            <button type="submit" id="update_pass" class="btn btn-primary btn-block">Update Password</button>
+
+            </fieldset>
+
+          </form>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /.row -->
+
+{% endblock %}

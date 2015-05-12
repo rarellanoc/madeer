@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+	<h2>Gracias</h2>
+	<p>Has completado las encuestas necesarias</p>
+
+
+</div>
+
+
+
+{% endblock %}

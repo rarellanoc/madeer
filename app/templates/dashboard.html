@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<div class="jumbotron">
+
+
+		
+		<h3>Hola 
+
+		{{ nusuario }}. </h3>
+		
+
+
+
+
+{%if autor =='N' %}
+	{% if sector=='' or not g.user.s1 %}
+		<p>
+		Tienes una encuesta disponible. </p>
+
+	{%elif sector=='Cons' and not g.user.s3 %}
+		<p>Se ha activado la encuesta Construcci&oacute;n para ti.</p>
+
+	{%elif sector=='Dis' and not g.user.s2 %}
+
+		<p>Se ha activado la encuesta Dise&ntilde;o para ti.</p>
+
+	{% else %}
+
+		<p>No hay mas encuestas disponibles por ahora.  <br/>Te mantendremos informado ante una nueva actualizaci&oacute;n.</p>
+
+	{% endif %}
+
+{%elif autor=='S' %}
+
+	{%if sector=='' %}
+		<p>Se ha activado la encuesta Aplicaci&oacute;n para ti.</p>
+
+	{%elif sector=='Dis' and not g.user.s2 and not g.user.s4%}
+
+		<p> Se han activado dos encuestas para ti </p>
+
+	{%elif sector=='Cons' and not g.user.s3 and not g.user.s4 %}
+
+		<p> Se han activado dos encuestas para ti </p>
+
+	{%elif sector=='DisOK' or sector=='ConsOK' %}
+
+		<p> La encuesta Aplicaci&oacute;n est&aacute; activa </p>
+
+	{% elif not g.user.s4 %}
+
+		<p>Se ha activado la encuesta Aplicaci&oacute;n para ti.</p>
+
+	{% elif sector=='Dis' and g.user.s4 and not g.user.s2 %}
+
+		<p>Se ha activado la encuesta Dise&ntilde;o para ti.</p>
+
+	{% elif sector=='Cons' and g.user.s4 and not g.user.s3 %}
+
+		<p>Se ha activado la encuesta Construcci&oacute;n para ti.</p>
+
+	{%else %}
+
+		<p>No hay mas encuestas disponibles por ahora.  <br/>Te mantendremos informado ante una nueva actualizaci&oacute;n.</p>
+
+	{% endif %}
+
+{% elif autor=='SOK' and sector=='Dis' %}
+
+		<p>Se ha activado la encuesta Dise&ntilde;o para ti.</p>
+
+{% elif autor=='SOK' and sector=='Cons' %}
+
+		<p>Se ha activado la encuesta Construcci&oacute;n para ti.</p>
+
+{% elif sector=='DisOK' or sector=='ConsOK' or g.user.s2 or g.user.s3 %}
+	
+	<p>No hay mas encuestas disponibles por ahora.  <br/>Te mantendremos informado ante una nueva actualizaci&oacute;n.</p>
+
+{% else %}
+
+<p>
+		Tienes una encuesta disponible. </p>
+
+{% endif %}
+		
+
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-3">
+	
+			
+			{% if sector=='Dis' or sector=='Cons' or sector=='Otro' or g.user.s1 %}
+
+			<p><a class="btn btn-primary btn-lg btn-block disabled" role="button"><span class="glyphicon glyphicon-ok pull-left"></span>Encuesta 1</a></p>
+			<p>Gracias por completar la encuesta 1</p>
+
+			{%else %}
+
+			<p><a class="btn btn-primary btn-lg btn-block" href="{{ url_for('survey_1')}}" role="button">Encuesta 1</a></p>
+			{% endif %}
+			</a></p>
+
+		</div>
+
+		<div class="col-md-3">
+
+			
+			{% if not g.user.s2 and sector=='Dis'%}
+
+			
+				<p><a class="btn btn-primary btn-lg btn-block" href="{{ url_for('survey_2')}}" role="button">Encuesta Dise&ntilde;o </a></p> preguntas: 5
+			{% elif g.user.s2 or sector=='DisOK' %}
+				<p><a class="btn btn-primary btn-lg btn-block disabled" role="button">
+					<span class="glyphicon glyphicon-ok pull-left"></span>	Encuesta Dise&ntilde;o
+				</a></p>
+				
+				<p>Gracias por completar la encuesta 2</p>
+			{% else %}
+			<p><a class="btn btn-primary btn-lg btn-block disabled" role="button">Encuesta Dise&ntilde;o</a></p>
+			{% endif %}
+		</div>
+
+		<div class="col-md-3">
+			{% if not g.user.s3 and sector=='Cons'%}
+				<p><a class="btn btn-primary btn-lg btn-block" href="{{ url_for('survey_3')}}" role="button">Encuesta Construcci&oacute;n</a></p>
+			{% elif g.user.s3 or sectos=='ConsOK' %}
+				<p><a class="btn btn-primary btn-lg btn-block disabled" role="button">
+					<span class="glyphicon glyphicon-ok pull-left"></span>	Encuesta Construcci&oacute;n
+				</a></p>
+				
+				<p> Gracias por completar la encuesta 3 </p>
+			{% else %}
+			<p><a class="btn btn-primary btn-lg btn-block disabled" role="button">Encuesta Construcci&oacute;n</a></p>
+			{% endif %}
+		</div>
+
+		<div class="col-md-3">
+			{% if not g.user.s4 and autor=='S' %}
+				<p><a class="btn btn-primary btn-lg btn-block" href="{{ url_for('survey_4')}}" role="button">Encuesta  Aplicaci&oacute;n</a></p>
+
+preguntas : 4
+
+
+			{%elif g.user.s4 == True or autor=='SOK' %}
+			
+			<p><a class="btn btn-primary btn-lg btn-block disabled" role="button"><span class="glyphicon glyphicon-ok pull-left"></span>Encuesta Aplicaci&oacute;n</a></p>
+
+<p> Gracias por completar la encuesta 4 </p>
+			
+
+			{% else %}
+			<p><a class="btn btn-primary btn-lg btn-block disabled" role="button">Encuesta Aplicaci&oacute;n</a></p>
+			{% endif %}
+		</div>
+
+	</div><!-- /.row -->
+
+{% endblock %}

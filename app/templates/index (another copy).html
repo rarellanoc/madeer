@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<div class="jumbotron">
+
+		{% if not sector %}
+		<h2>{{meta.titulo}}</h2>
+		<p>{{meta.subtitulo}}
+		</p> 
+
+
+		{% elif sector=='' %}
+		
+		<h1>Bienvenido</h1>
+		{%else %}
+
+		<h1>Hola denuevo.</h1>
+		{% endif %}
+</div>
+
+
+
+
+
+<div class="alert jumbotron alert-dismisable">
+
+
+<div class="row">
+
+
+
+
+
+
+
+<div class='col-md-9'>
+
+
+</br><h4><span class='label label-default'>NOTICIAS :</label></h4>{{meta.fecha_motd}} <p> {{meta.motd}}</a>.</p> </br>
+
+</div>
+
+
+
+	
+
+	
+
+
+		<div class="col-md-3">
+</br>
+</br>
+			{% if not g.user.s1 %}
+				<p><a class="btn btn-primary btn-lg btn-block" href="{{ url_for('survey_1')}}" role="button">Encuesta > </a></p>
+			{% elif sector %}
+				<a class="btn btn-primary btn-lg btn-block disabled" role="button">
+					<span class="glyphicon glyphicon-ok pull-left"></span>	Encuesta 1
+				</a>
+				<br>
+				<p>Gracias por completar la encuesta 1 . {% if g.user.s1 and not g.user.s2 and sector=='Dis'%}
+				<br/>Se ha activado la encuesta Dise&ntilde;o . 
+				{% endif %} 
+
+				{% if g.user.s1 and not g.user.s2 and sector=='Cons'%}
+				<br/>Se ha activado la encuesta Construcci&oacute;n . 
+				{% endif %}
+
+				</p>
+			{% else %}
+			<p><a class="btn btn-primary btn-lg btn-block disabled" role="button">Encuesta 1 </a></p>
+			{% endif %}
+		</div>
+
+
+
+	</div><!-- /.row -->
+	</div>
+{% endblock %}

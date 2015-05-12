@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% from "macro.html" import render_field %}
+
+{% block content %}
+
+
+
+
+
+<div class="row">
+
+<div class="col-md-12 jumbotron ">
+
+<h1></h1>
+<h2> Uniendo diseñadores y productores. </h2>
+
+
+
+</div>
+
+<div class="col-md-6 well bs-component ">
+
+<h4> Tienes un proyecto de diseño en madera ? </h4>
+
+<h4> Necesitas material para concretar tu proyecto ? </h4>
+
+
+<br/>
+<br/>
+<h6> Inscríbete en la lista.
+Te mantendremos informado </h6>
+
+<form method="POST" action="." class="form form-horizontal">
+	
+
+	<div class='col-lg-8'>
+
+          {{ form.csrf_token }}
+          {{ render_field(form.email, class="form-control" , placeholder="tucorreo@mail.cl")}}
+
+
+	</div>
+	<div class="control-group col-lg-2">
+
+	<label class="control-label"></label>
+              <div class="controls">
+          
+            
+                <button type="submit" id="submit" class="btn btn-primary">Inscribirme !</button>
+              </div>
+          </div>
+
+        </form>
+
+
+</div>
+
+<div class="col-md-1 ">
+
+</div>
+
+<div class="col-md-5 jumbotron ">
+
+<h4> Empresas productoras </h4>
+
+<h4> Necesitas ampliar tu mercado y mostrar diseños que usen tus productos ? </h4>
+
+<br/>
+<br/>
+ <button class="btn btn-primary">Madeer para Empresas </button>
+
+
+</div>
+
+
+
+</div><!-- /.row -->
+
+
+	</div>
+{% endblock %}

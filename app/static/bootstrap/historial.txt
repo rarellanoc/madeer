@@ -1,0 +1,1000 @@
+ 1009  git config --global core.autocrlf input
+ 1010  git config --global core.safecrlf true
+ 1011  cd Documents/git_tutorial/work/
+ 1012  mkdir hello
+ 1013  cd hello
+ 1014  puts "Hello World"
+ 1015  touch hello.rb
+ 1016  ls
+ 1017  nano hello.rb
+ 1018  tail hello.rb
+ 1019  git init
+ 1020  git add hello.rb
+ 1021  git commit -m "First Commit"
+ 1022  git status
+ 1023  nano hello.rb
+ 1024  git status
+ 1025  git add hello.rb
+ 1026  git status
+ 1027  git commit
+ 1028  git status
+ 1029  exit
+ 1030  sudo
+ 1031  sudo apt-get update
+ 1032  sudo apt-get install vlc 
+ 1033  sudo apt-get install vlc browser-plugin-vlc
+ 1034  tunesviewer
+ 1035  Downloads/processing-2.0.2/./processing
+ 1036  ffmpeg -i /home/rarellano/Documents/goorganization/02/videos/pi_patterns.mp4 -acodec copy -vcodec copy -f mov pi.mov
+ 1037  man avconv
+ 1038  cd Documents/goorganization/02/videos/
+ 1039  ls
+ 1040  avconv -i pi_patterns -r 24 pi.mov
+ 1041  cd
+ 1042  processing-2.2.1/./processing
+ 1043  curl -version
+ 1044  pip --version
+ 1045  curl --version
+ 1046  sudo apt-get curl
+ 1047  sudo apt-get instal curl
+ 1048  sudo apt-get install curl
+ 1049  sudo curl https://yt-dl.org/latest/youtube-dl -o /usr/local/bin/youtube-dl
+ 1050  sudo chmod a+x /usr/local/bin/youtube-dl
+ 1051  youtube-dl --help
+ 1052  youtube-dl --id SsBxcpkyMMw
+ 1053  find SdBx*
+ 1054  find SsBxcpkyMMw.mp4
+ 1055  whereis SsBxcpkyMMw.mp4
+ 1056  pwd
+ 1057  man youtube-dl
+ 1058  processing-2.2.1/./processing
+ 1059  youtube-dl --id q2kd1B0Ybto 
+ 1060  processing-2.2.1/./processing
+ 1061  avconv -i att.mp4 -r 24 att.mov
+ 1062  processing-2.2.1/./processing
+ 1063  unetbootin
+ 1064  sudo apt-get install unetbootin
+ 1065  sudo apt-get update
+ 1066  sudo apt-get install unetbootin
+ 1067  apt-get updtate --fix-missing
+ 1068  apt-get update --fix-missing
+ 1069  sudo apt-get update --fix-missing
+ 1070  sudo apt-get update
+ 1071  fdisk -l
+ 1072  cat /proc/partitions
+ 1073  fdisk -l
+ 1074  sudo lshw -class disk
+ 1075  sudo fdisk -l
+ 1076  dmesg
+ 1077  cd Downloads
+ 1078  ls
+ 1079  ls *.iso
+ 1080  cp debian-7.6.0-ia64-DVD-1.iso dev/sdb
+ 1081  cp debian-7.6.0-ia64-DVD-1.iso /dev/sdb
+ 1082  sudo cp debian-7.6.0-ia64-DVD-1.iso /dev/sdb
+ 1083  dmesg
+ 1084  sync
+ 1085  fdisk -h
+ 1086  sudo fdisk -l
+ 1087  sudo apt-get install ntfsprogs
+ 1088  sudo fdisk -l
+ 1089  cd /dev/sdb
+ 1090  mount /dev/sdb2 /mnt
+ 1091  sudo mount /dev/sdb2 /mnt
+ 1092  cd /mnt
+ 1093  ls
+ 1094  sudo mount /dev/sdb2 /mnt
+ 1095  ls
+ 1096  cd /mnt
+ 1097  cd /home/rarellano/Downloads/debian-7.6.0-ia64-DVD-1/firmware/
+ 1098  ls
+ 1099  cd ..
+ 1100  ls *.iso
+ 1101  dmesg
+ 1102  sudo cp debian-7.6.0-ia64-DVD-1.iso /dev/sdb
+ 1103  cd /dev/sdb
+ 1104  whatis /dev/sbd
+ 1105  whatis /dev/sbd/
+ 1106  sync
+ 1107  whatis /dev/sbd/
+ 1108  cd /dev/sdb
+ 1109  locate firmware.tar.gz
+ 1110  whereis firmware.tar.gz
+ 1111  which  firmware.tar.gz
+ 1112  find firmware.tar.gz
+ 1113  sudo find firmware.tar.gz
+ 1114  find firmware
+ 1115  locate firmware
+ 1116  locate firmware.tar.gz
+ 1117  locate firmware.tar
+ 1118  mount /dev/sdb2 /mnt
+ 1119  sudo mount /dev/sdb2 /mnt
+ 1120  cd /
+ 1121  mkdir /mnt
+ 1122  cd /mnt
+ 1123  sudo mount /dev/sdb /mnt
+ 1124  cd /
+ 1125  sudo mkdir /mnt
+ 1126  ls
+ 1127  sudo mount /dev/sdb /mnt
+ 1128  sudo mount /dev/sdb2 /mnt
+ 1129  sudo mount /dev/sdb1 /mnt
+ 1130  sudo mount /dev/sdb /mnt
+ 1131  cd /mnt
+ 1132  ls
+ 1133  cd debian
+ 1134  ls
+ 1135  cd install
+ 1136  ls
+ 1137  cd ..
+ 1138  cd pool
+ 1139  ls
+ 1140  cd main
+ 1141  ls
+ 1142  cd m
+ 1143  ls
+ 1144  cd /
+ 1145  find mbr
+ 1146  install-mbr /dev/sdb
+ 1147  sudo apt-get install mbr
+ 1148  install-mbr /dev/sdb
+ 1149  sudo install-mbr /dev/sdb
+ 1150  sudo install-mbr /dev/sdb --force
+ 1151  mkdosfs
+ 1152  mkdosfs /dev/sdb1
+ 1153  mkdosfs /dev/sdb
+ 1154  sudo mkdosfs /dev/sdb
+ 1155  unmount /dev/sdb
+ 1156  mount
+ 1157  mount -h
+ 1158  sudo mkdosfs /dev/sdb
+ 1159  sudo mkdosfs /dev/sdb1
+ 1160  dmesg | grep scsi -A 3
+ 1161  cd Downloads
+ 1162  ls *.iso
+ 1163  dd if=debian-7.6.0-ia64-DVD-1.iso  of=/dev/sdb bs=4M; sync
+ 1164  sudo dd if=debian-7.6.0-ia64-DVD-1.iso  of=/dev/sdb bs=4M; sync
+ 1165  cd Downloads
+ 1166  ls *.iso
+ 1167  dmesg
+ 1168  sudo dd if=debian-7.6.0-amd64-netinst(1).iso  of=/dev/sdb bs=4M; sync
+ 1169  sudo dd if=debian-7.6.0-amd64-netinst.iso  of=/dev/sdb bs=4M; sync
+ 1170  ls *.iso
+ 1171  cp debian-7.6.0-amd64-netinst.iso /dev/sdb
+ 1172  sudo cp debian-7.6.0-amd64-netinst.iso /dev/sdb
+ 1173  sync
+ 1174  dmesg
+ 1175  sudo cp debian-7.6.0-amd64-netinst.iso /dev/sdb
+ 1176  sync
+ 1177  cd debian-7.6.0-ia64-DVD-1/
+ 1178  ls
+ 1179  cd boot
+ 1180  ls
+ 1181  cd ..
+ 1182  cd [BOOT]
+ 1183  ls
+ 1184  cd ..
+ 1185  find boot.img.gz
+ 1186  dmesg
+ 1187  processing-2.2.1/./processing
+ 1188  restart
+ 1189  shutdown now
+ 1190  reboot
+ 1191  sudo reboot
+ 1192  emacs &
+ 1193  sudo apt-get install emacs24
+ 1194  sudo apt-get update
+ 1195  sudo apt-get install emacs24
+ 1196  mount
+ 1197  cd /dev/sdb1
+ 1198  cd /media/Kindle
+ 1199  ls
+ 1200  man ls
+ 1201  ls -all
+ 1202  cd
+ 1203  mkdir kindlebackup
+ 1204  ls
+ 1205  cd /media/Kindle
+ 1206  ls
+ 1207  man cp
+ 1208  cd
+ 1209  pwd
+ 1210  cd /media/Kindle
+ 1211  cp * /home/rarellano/kindlebackup/
+ 1212  cp -r  * /home/rarellano/kindlebackup/
+ 1213  cd 
+ 1214  clear
+ 1215  cd Downloads/
+ 1216  ls
+ 1217  gz -xvf emacs-21.4a.tar.gz 
+ 1218  gzip -xvf emacs-21.4a.tar.gz 
+ 1219  gzip --help
+ 1220  gzip -dvf emacs-21.4a.tar.gz 
+ 1221  tar --help
+ 1222  tar -x emacs-21.4a.tar 
+ 1223  tar -zxvf emacs-21.4a.tar 
+ 1224  tar -xvf emacs-21.4a.tar 
+ 1225  cd emacs-21.4/
+ 1226  ./configure
+ 1227  make
+ 1228  cd /usr/local
+ 1229  ls
+ 1230  cd -
+ 1231  make
+ 1232  ls
+ 1233  cd etc/PROBLEMS
+ 1234  less etc/PROBLEMS
+ 1235  gedit etc/PROBLEMS
+ 1236  q
+ 1237  sudo apt-get install emacs
+ 1238  emacs $
+ 1239  emacs
+ 1240  emacs &
+ 1241  emacs -t
+ 1242  emacs -t device
+ 1243  emcas --terminal=device
+ 1244  emacs --terminal=device
+ 1245  sudo apt-get install emacs23
+ 1246  emacs -nw
+ 1247  cd processing-2.2.1/./processing
+ 1248  cd processing-2.2.1/
+ 1249  ls
+ 1250  ./processing
+ 1251  cd processing-2.2.1/
+ 1252  ./processing
+ 1253  mount
+ 1254  cd /media/CA64ABA164AB8EAF/
+ 1255  ls
+ 1256  find *.pde
+ 1257  find "*.pde"
+ 1258  locate "*.pde"
+ 1259  locate --help
+ 1260  find --help
+ 1261  locate "*.pde"
+ 1262  find --help
+ 1263  cd /media/CA64ABA164AB8EAF/
+ 1264  locate /media/CA64ABA164AB8EAF/*.pde -r
+ 1265  locate /media/CA64ABA164AB8EAF/*.pde 
+ 1266  cd
+ 1267  cd processing-2.2.1/
+ 1268  ./processing
+ 1269  cd processing-2.2.1/
+ 1270  ./processing
+ 1271  touch f1 f2 f3 f4
+ 1272  ls
+ 1273  mv f1 f2 f3 f4
+ 1274  cat -An /etc/fstab
+ 1275  cat /etc/fstab
+ 1276  head /etc/fstab
+ 1277  less /etc/passwd
+ 1278  touch foo.txt
+ 1279  ls -la | grep foo
+ 1280  chown root foo.txt
+ 1281  sudo chown root foo.txt
+ 1282  ls -la | grep foo
+ 1283  sudo chown :admins foo.txt
+ 1284  groupadd adminss
+ 1285  sudo groupadd adminss
+ 1286  sudo chown :adminss foo.txt
+ 1287  ls -la | grep foo
+ 1288  chmod 666 foo.txt
+ 1289  sudo chmod 666 foo.txt
+ 1290  ls -la | grep foo
+ 1291  sudo chmod 770 foo.txt
+ 1292  ls -la | grep foo
+ 1293  exit
+ 1294  ls -la | grep foo
+ 1295  rm foo.txt
+ 1296  touch bar.txt
+ 1297  ls -la | grep bar
+ 1298  ln bar.txt barlink.ln
+ 1299  ls -la | grep bar
+ 1300  ln -s bar.txt barlink.ls
+ 1301  ls -la | grep bar
+ 1302  rm bar.txt
+ 1303  ls -la | grep bar
+ 1304  ls -al
+ 1305  locate bar
+ 1306  locate barlink
+ 1307  find barlink
+ 1308  updatedb
+ 1309  sudo updatedb
+ 1310  find barlink
+ 1311  locate barlink
+ 1312  rm barlink.ln barlink.ls
+ 1313  locate barlink
+ 1314  updatedb
+ 1315  sudo updatedb
+ 1316  locate barlink
+ 1317  nano .bashrc
+ 1318  hola
+ 1319  nano .bashrc
+ 1320  nano .bash_profile
+ 1321  alias hola='ls'
+ 1322  hola
+ 1323  exit
+ 1324  hola
+ 1325  nano .bash_profiles
+ 1326  hola
+ 1327  nano .bash_profiles
+ 1328  hola
+ 1329  sudo updatedb
+ 1330  hola
+ 1331  nano .bashrc
+ 1332  nano .bashaliases
+ 1333  nano .bash_aliases
+ 1334  nano .bashrc
+ 1335  nano .bash_aliases
+ 1336  hola
+ 1337  source /.bashrc
+ 1338  source ~/.bashrc
+ 1339  hola
+ 1340  cd processing-2.2.1/
+ 1341  ./processing
+ 1342  dmesg
+ 1343  mount
+ 1344  fdisk -l
+ 1345  sudo fdisk -l
+ 1346  cd /media
+ 1347  ls
+ 1348  cd ..
+ 1349  ls
+ 1350  find canon
+ 1351  locate canon
+ 1352  lsusb
+ 1353  dmesg
+ 1354  ls
+ 1355  cd mnt
+ 1356  ls
+ 1357  gphoto2 --list-ports
+ 1358  cd ..
+ 1359  canopy
+ 1360  cd Documents
+ 1361  ls
+ 1362  cd home
+ 1363  cd Documents
+ 1364  cd rarellano
+ 1365  cd Documents
+ 1366  cd edx/6002x/PS1/
+ 1367  ls
+ 1368  pwd
+ 1369  mysql
+ 1370  mysql -user root
+ 1371  mysql -u root
+ 1372  mysql -u root -p
+ 1373  sh Downloads/./canopy-1.4.1-rh5-64.sh 
+ 1374  sh Downloads/canopy-1.4.1-rh5-64.sh 
+ 1375  cd Downloads
+ 1376  sh canopy-1.4.1-rh5-64.sh 
+ 1377  man sh
+ 1378  chmod -x canopy-1.4.1-rh5-64.sh 
+ 1379  ./canopy-1.4.1-rh5-64.sh 
+ 1380  sudo ./canopy-1.4.1-rh5-64.sh 
+ 1381  sudo sh ./canopy-1.4.1-rh5-64.sh 
+ 1382  sudo sh canopy-1.4.1-rh5-64.sh 
+ 1383  find canopy
+ 1384  locate canopy
+ 1385  clear
+ 1386  ls | grep canopy
+ 1387  $ sudo chmod 755 /var/www/moveup/img
+ 1388  $ sudo chmod 755 /var/www/moveup/img/
+ 1389  sudo
+ 1390  sudo chown apache:apache /var/www/moveup/img
+ 1391  $ sudo chmod 755 /var/www/moveup/img/
+ 1392  $ sudo chmod 755 /var/www/moveup/img
+ 1393  $ chmod 755 /var/www/moveup/img
+ 1394  ls -all /var/www/moveup
+ 1395  mysql -u root -p < i_mt.sql
+ 1396  mysql -u root -p
+ 1397  ls
+ 1398  ls | grep mt
+ 1399  mysql < mt.sql
+ 1400  mysql -u root -p < mt.sql
+ 1401  mysql -u root -p 
+ 1402  mysql -u root -p < mt.sql
+ 1403  mysql -u root -p 
+ 1404  mysql -u root -p < mt.sql
+ 1405  mysql -u root -p 
+ 1406  mysql -u root -p < mt.sql
+ 1407  mysql -u root -p 
+ 1408  mysql -u root -p < i_mt.sql
+ 1409  mysql -u root -p 
+ 1410  mysql -u root -p
+ 1411  mysql -u root -p 
+ 1412  apache restart
+ 1413  service apache status
+ 1414  service apache2 status
+ 1415  service apache2 restart
+ 1416  mysql -u root -p 
+ 1417  mysql -u root -p < ct_test.sql
+ 1418  pwd
+ 1419  mysql -u root -p < tier.sql
+ 1420  mysql -u root -p
+ 1421  cd Documents/cuarto_semestre/programacion_IV/casatrick_simulation/
+ 1422  pwd
+ 1423  cd
+ 1424  cd ..
+ 1425  pwd
+ 1426  cd home;
+ 1427  pwd
+ 1428  ls
+ 1429  cd Documents/cuarto_semestre/programacion_IV/casatrick_simulation/
+ 1430  python simple_game_play.py
+ 1431  cd Documents/cuarto_semestre/programacion_IV/casatrick_simulation/
+ 1432  cd
+ 1433  cd Documents/cuarto_semestre/programacion_IV/casatrick_simulation/
+ 1434  python simple_game_play.py
+ 1435  clear
+ 1436  PS1 = rarellano
+ 1437  PS1='\u:\W\$ '
+ 1438  python simple_game_play.py
+ 1439  clear
+ 1440  #hola
+ 1441  python simple_game_play.py
+ 1442  cd
+ 1443  cd processing-2.2.1/
+ 1444  ./processing
+ 1445  cd Documents/cuarto_semestre/programacion_IV/casatrick_simulation/
+ 1446  cd
+ 1447  cd Documents/cuarto_semestre/programacion_IV/casatrick_simulation/
+ 1448  python simple_game_play.py
+ 1449  mysql -u root -p
+ 1450  sudo apt-get install nodejs
+ 1451  npm install -g less
+ 1452  sudo apt-get install npm
+ 1453  npm install -g less
+ 1454  sudo apt-get update
+ 1455  sudo apt-get purge nodejs npm
+ 1456  sudo apt-get update
+ 1457  cd Downloads/node-v0.10.33/
+ 1458  ./configure
+ 1459  make
+ 1460  make install
+ 1461  make test
+ 1462  cd 
+ 1463  make install
+ 1464  sudo apt-get install -y python-software-properties
+ 1465  sudo add-apt-repository ppa:chris-lea/node.js
+ 1466  sudo apt-get update
+ 1467  sudo apt-get install nodejs
+ 1468  npm install -g less
+ 1469  npm config set registry http://registry.npmjs.org/
+ 1470  npm install -g less
+ 1471  mysql -u root -p
+ 1472  find *.iso
+ 1473  find --help
+ 1474  ls find --help
+ 1475  find *.iso ls
+ 1476  find  -ls *.iso
+ 1477  find *.iso
+ 1478  ifconfig 
+ 1479  pip install eppy
+ 1480  sudo apt-get install python-pip
+ 1481  clear
+ 1482  pip install epp
+ 1483  pip install eppy
+ 1484  graphviz
+ 1485  cd Downloads/eppy-0.4.6/
+ 1486  python setup.py
+ 1487  python setup.py cmd --help
+ 1488  pip bunch
+ 1489  pip install bunch
+ 1490  sudo pip install bunch
+ 1491  sudo pip install beautifulsoup4
+ 1492  sudo pip install pyparsing
+ 1493  sudo pip install pydot
+ 1494  sudo pip install pytest
+ 1495  sudo pip install eppy
+ 1496  sudo apt-get numpy
+ 1497  sudo apt-get install numpy
+ 1498  sudo apt-get install python-numpy python-scipy libblas-dev liblapack-dev gfortran python-dev
+ 1499  sudo pip install numpy --upgrade
+ 1500  cd
+ 1501  updatedb
+ 1502  sudo updatedb
+ 1503  locate eppy
+ 1504  cd /usr/local/lib/python2.7/dist-packages/eppy/
+ 1505  ls
+ 1506  cd
+ 1507  locate iddfiles
+ 1508  find iddfiles
+ 1509  find "*.idd"
+ 1510  find *.idd
+ 1511  locate *.idd
+ 1512  locate resources
+ 1513  locate resources | grep eppy
+ 1514  locate /eppy/resources
+ 1515  find / -name "resources" -type d
+ 1516  find  -name "resources" -type d
+ 1517  clear
+ 1518  locate *.idd
+ 1519  locate *.idf
+ 1520  locate -i *.idf
+ 1521  locate -i *.mp3
+ 1522  clear
+ 1523  cd
+ 1524  pwd
+ 1525  cd eppy-master/
+ 1526  pwd
+ 1527  ls
+ 1528  cd eppy
+ 1529  ls
+ 1530  cd resources
+ 1531  ls
+ 1532  cd ..
+ 1533  pwd
+ 1534  cd eppy
+ 1535  pwd
+ 1536  cd
+ 1537  cd Documents/practica/eppy/
+ 1538  ls
+ 1539  python primertest.py
+ 1540  python test2.py
+ 1541  python test3.py
+ 1542  cd Documents/eplus/
+ 1543  ls
+ 1544  chmod +x SetEPlusV810009-lin.sh 
+ 1545  sudo ./SetEPlusV810009-lin.sh 
+ 1546  cd /usr/local/bin
+ 1547  ls
+ 1548  runenergyplus --help
+ 1549  energyplus --help
+ 1550  ls
+ 1551  EnergyPlus --help
+ 1552  ls
+ 1553  ls -all
+ 1554  cd ..
+ 1555  cd EnergyPlus-8-1-0/
+ 1556  cd WeatherData/
+ 1557  pwd
+ 1558  PS1='[\u@\h \W]\$ '  
+ 1559  clear
+ 1560  pwd
+ 1561  cd
+ 1562  cd Downloads/
+ 1563  CHL_Concepcion.856820_IWEC/
+ 1564  cd CHL_Concepcion.856820_IWEC/
+ 1565  ls
+ 1566  sudo cp CHL_*.* /usr/local/EnergyPlus-8-1-0/WeatherData
+ 1567  cd
+ 1568  energyplus --weather
+ 1569  cd /usr/local/bin
+ 1570  ls
+ 1571  energyplus --weather
+ 1572  EnergyPlus --weather
+ 1573  cd ..
+ 1574  cd EnergyPlus-8-1-0/
+ 1575  ls
+ 1576  EnergyPlus --weather
+ 1577  cd ..
+ 1578  cd bin
+ 1579  ls
+ 1580  runenergyplus --help
+ 1581  runenergyplus /home/rarellano/Documents/practica/181214/OfficeSmall/ASHRAE90.1_OfficeSmall_STD2004_San_Francisco.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1582  exit
+ 1583  cd Documents/practica/eppy/
+ 1584  python ex1a.py
+ 1585  cd
+ 1586  runenergyplus /home/rarellano/Documents/practica/181214/Exercise1A2.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1587  exit
+ 1588  cd Documents/practica/eppy/
+ 1589  python csvParser.py
+ 1590  clear
+ 1591  python csvParser.py
+ 1592  clear
+ 1593  python csvParser.py
+ 1594  exit
+ 1595  ifconfig
+ 1596  ifconfig -all
+ 1597  ifconfig -a
+ 1598  network service restart
+ 1599  service network restart
+ 1600  ifconfig
+ 1601  ifconfig -a
+ 1602  cd Documents/practica/2da_semana/221214/
+ 1603  ls
+ 1604  python csvParser.py 
+ 1605  python csvParser_simple.py 
+ 1606  cd Documents/practica/2da_semana/221214/
+ 1607  python csvParser_simple.py 
+ 1608  runenergyplus /home/rarellano/Documents/practica/2da_semana/221214/something2.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1609  exit
+ 1610  cd Documents/practica/2da_semana/221214/
+ 1611  python csvParser_vertex34.py 
+ 1612  cd Documents/practica/2da_semana/221214/
+ 1613  python csvParser_vertex34.py 
+ 1614  cd Documents/practica/2da_semana/221214/
+ 1615  python csvParser_vertex34.py 
+ 1616  runenergyplus /home/rarellano/Documents/practica/2da_semana/221214/something34.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1617  runenergyplus /home/rarellano/Documents/practica/2da_semana/231214/something34.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1618  cd processing-2.2.1/./processing
+ 1619  processing-2.2.1/./processing
+ 1620  runenergyplus /home/rarellano/Documents/practica/3ra_semana/301214/T_01.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1621  runenergyplus /home/rarellano/Documents/practica/3ra_semana/301214/T_02.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1622  runenergyplus /home/rarellano/Documents/practica/3ra_semana/301214/T_03.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1623  cd processing-2.2.1/
+ 1624  ./processing
+ 1625  cd processing-2.2.1/
+ 1626  ./processing
+ 1627  cd processing-2.2.1/
+ 1628  ./processing
+ 1629  cd
+ 1630  processing-3.0a5/
+ 1631  cd processing-3.0a5/
+ 1632  ./processing
+ 1633  processing
+ 1634  ./processing
+ 1635  cd ..
+ 1636  cd processing-2.2.1/
+ 1637  ./processing
+ 1638  cd processing-2.2.1/./processing
+ 1639  processing-2.2.1/./processing
+ 1640  ls
+ 1641  cd ..
+ 1642  ls
+ 1643  cd cdrom
+ 1644  ls
+ 1645  cd ..
+ 1646  cd mtn
+ 1647  cd mnt
+ 1648  ls
+ 1649  cd ..
+ 1650  cd media
+ 1651  ls
+ 1652  cd DATA
+ 1653  ls
+ 1654  cd weax\ varias/
+ 1655  ls
+ 1656  cd ..
+ 1657  cp weax\ varias/ /home/rarellano
+ 1658  cd weax\ varias/
+ 1659  cp *.jpg /home/rarellano
+ 1660  cp Kiu.zip /home/rarellano
+ 1661  exit
+ 1662  cd processing-2.2.1/./processing
+ 1663  processing-2.2.1/./processing
+ 1664  runenergyplus /home/rarellano/Documents/practica/2da_semana/221214/ep_dosaguas_80.0.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1665  runenergyplus /home/rarellano/Documents/practica/3ra_semana/301214/ep_dosaguas_80.0.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1666  runenergyplus /home/rarellano/Documents/practica/2da_semana/221214/ep_dosaguas_81.0.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1667  runenergyplus /home/rarellano/Documents/practica/3ra_semana/301214/ep_dosaguas_81.0.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1668  runenergyplus /home/rarellano/Documents/practica/3ra_semana/301214/ep_dosaguas_82.0.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1669  runenergyplus /home/rarellano/PA_template.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1670  runenergyplus /home/rarellano/PA_template81.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1671  runenergyplus /home/rarellano/test.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw 
+ 1672  history > historia.txt
+ 1673  cd Downloads
+ 1674  ls
+ 1675  cd ..
+ 1676  convert mm.pdf -crop 50%x0 +repage mm2.pdf
+ 1677  convert mm.pdf -compress lzw -crop 50%x0 +repage mm3.pdf
+ 1678  convert mm.pdf -compress lzw -density 600 -crop 50%x0 +repage mm3.pdf
+ 1679  convert mm.pdf -compress lzw -density 1200 -crop 50%x0 +repage mm4.pdf
+ 1680  convert mm.pdf -compress lzw -quality 98 -density 72 -crop 50%x0 +repage mm5.pdf
+ 1681  convert mm.pdf size -1200 -compress lzw -density 600 -crop 50%x0 +repage mm4.pdf
+ 1682  convert mm.pdf -size 1410x2079 -compress lzw -density 300 -crop 50%x0 +repage mm6.pdf
+ 1683  convert mm.pdf -size 2820x4158 -crop 50%x0 +repage mm7.pdf
+ 1684  convert mm.pdf -size 5640x8216 -crop 50%x0 +repage mm7.pdf
+ 1685  convert mm.pdf -size 5640x8216 -units PixelsPerInch -crop 50%x0 +repage mm8.pdf
+ 1686  convert mm.pdf -size 14100x20790 -compress lzw -density 300 -crop 50%x0 +repage mm9.pdf
+ 1687  convert mm.pdf -size 14100x20790 -density 600 -crop 50%x0 +repage mm10.pdf
+ 1688  convert mm.pdf -resize 200% -density 600 -crop 50%x0 +repage mm11.pdf
+ 1689  convert mm.pdf -rotate 90 -crop 50%x0 +repage mm12.pdf
+ 1690  convert mm.pdf  -crop 50%y0 +repage mm13.pdf
+ 1691  convert mm3.pdf -rotate 90 -crop 50%x0 +repage mm_final.pdf
+ 1692  sudo apt-get update
+ 1693  sudo apt-get updat
+ 1694  sudo apt-get upgrade
+ 1695  sudo apt-get update
+ 1696  sudo apt-get upgrade
+ 1697  restart
+ 1698  system restart
+ 1699  sudo apt-get update
+ 1700  sudo apt-get upgrade
+ 1701  apt-get --fix-missing
+ 1702  sudo apt-get upgrade --fix-missing
+ 1703  sudo apt-get update
+ 1704  sudo apt-get upgrade
+ 1705  plex
+ 1706  sudo apt-get update
+ 1707  sudo apt-get upgrade
+ 1708  sudo apt-get upgrade --fix.missing
+ 1709  sudo apt-get upgrade --fix-missing
+ 1710  sudo apt-get update
+ 1711  sudo apt-get upgrade
+ 1712  scheme
+ 1713  cd mit-scheme-9.2/doc
+ 1714  sh /.install.sh
+ 1715  sh ./install.sh
+ 1716  shinstall.sh
+ 1717  sh install.sh
+ 1718  sh ./install-sh
+ 1719  sh ./install-sh.sh
+ 1720  sh ./install-sh
+ 1721  sh install-sh
+ 1722  configure
+ 1723  install-sh
+ 1724  install-sh.sh
+ 1725  sh install
+ 1726  install
+ 1727  sh install install-sh
+ 1728  sh install ./install-sh
+ 1729  ./configure
+ 1730  sh install.sh
+ 1731  sh install-sh
+ 1732  sh ./install-sh
+ 1733  ./mkinstalldirs
+ 1734  make
+ 1735  make install-sh
+ 1736  cd mit-scheme-9.2/doc
+ 1737  ./install-sh
+ 1738  ./install-sh.sh
+ 1739  sh ./install-sh
+ 1740  cd Downloads/
+ 1741  sh racket-6.1.1-i386-linux-ubuntu-precise.sh 
+ 1742  cd..
+ 1743  cd ..
+ 1744  cd racket/
+ 1745  cd bin
+ 1746  ls
+ 1747  drracket
+ 1748  cd ..
+ 1749  ls
+ 1750  sudo apt-get install racket
+ 1751  cd bin
+ 1752  ls
+ 1753  ./drracket
+ 1754  cd Downloads/
+ 1755  cd ..
+ 1756  cd racket/
+ 1757  cd bin
+ 1758  ./drracket
+ 1759  cd..
+ 1760  cd ..
+ 1761  cd
+ 1762  cd racket/bin/./drracket
+ 1763  racket/bin/./drracket
+ 1764  runenergyplus /home/rarellano/test_linux.idf  /usr/local/EnergyPlus-8-1-0/WeatherData/CHL_Concepcion.856820_IWEC.epw
+ 1765  cd Downloads/
+ 1766  cd usr/lib
+ 1767  ls
+ 1768  sudo cp libstdc++.so.5 /usr/lib
+ 1769  sudo cp libstdc++.so.5.0.1 /usr/lib
+ 1770  cd ..
+ 1771  cd sp-auth/
+ 1772  ./sp-sc-auth sop://broker.sopcast.com:3912/255768 3908 8908 > /dev/null
+ 1773  ./sp-sc-auth
+ 1774  ./sp-sc-auth sop://broker.sopcast.com:3912/255768 3908 8908 > /dev/null &
+ 1775  ./sp-sc-auth sop://broker.sopcast.com:3912/255768 3908 8908 > /dev/null
+ 1776  wget http://launchpad.net/sopcast.sh/main/0.6/+download/sopcast.tar.gz
+ 1777  tar xzvf sp-auth.tgz
+ 1778  tar xzvf sopcast.tar.gz
+ 1779  sudo cp sopcast/sopcast /usr/bin/
+ 1780  sudo sed -i 's/vlc/mplayer/' /usr/bin/sopcast
+ 1781  cd sopcast
+ 1782  ls
+ 1783  sh ./sopcast
+ 1784  sop://broker.sopcast.com:3912/255768
+ 1785  <sop://broker.sopcast.com:3912/255768>
+ 1786  sudo add-apt-repository ppa:ferramroberto/extra && sudo apt-get update
+ 1787  sudo apt-get install sopcast-player sp-auth
+ 1788  sudo add-apt-repository ppa:ferramroberto/extra 
+ 1789  sudo apt-get install sopcast-player sp-auth
+ 1790  sudo add-apt-repository ppa:jason-scheunemann/ppa
+ 1791  sudo apt-get update && sudo apt-get install sp-auth sopcast-player
+ 1792  sudo apt-get install sp-auth sopcast-player
+ 1793  updatedb
+ 1794  sudo add-apt-repository ppa:venerix/pkg
+ 1795  sudo apt-get update
+ 1796  sudo apt-get install tv-maxe
+ 1797  tv-maxe
+ 1798  pip install virtualenvwrapper
+ 1799  sudo pip install virtualenvwrapper
+ 1800  export WORKON_HOME=~/Envs
+ 1801  mkdir -p $WORKON_HOME
+ 1802  /usr/local/bin/virtualenvwrapper.sh
+ 1803  mkvirtualenv env1
+ 1804  cd /usr/local/lib/python2.7/dist-packages/
+ 1805  export WORKON_HOME=~/Envs
+ 1806  mkdir -p $WORKON_HOME
+ 1807  /usr/local/bin/virtualenvwrapper.sh
+ 1808  mkvirtualenv env1
+ 1809  cd virtualenvwrapper
+ 1810  export WORKON_HOME=~/Envs
+ 1811  mkdir -p $WORKON_HOME
+ 1812  /usr/local/bin/virtualenvwrapper.sh
+ 1813  mkvirtualenv env1
+ 1814  source /usr/local/bin/virtualenvwrapper.sh
+ 1815  mkvirtualenv env1
+ 1816  cd
+ 1817  mkvirtualenv survey_env -r requirements.txt
+ 1818  cd Downloads
+ 1819  ls
+ 1820  flask_survey-master/
+ 1821  cd flask_survey-master/
+ 1822  mkvirtualenv survey_env -r requirements.txt
+ 1823  exit
+ 1824  sudo apt-get install libmysqlclient-dev
+ 1825  mysql -u madeeruser -p -h mysql.madeer.ricardoarellano.cl madeersurvey
+ 1826  ssh madeeruser@bluestar.dreamhost.com
+ 1827  cd Downloads
+ 1828  ssh madeeruser@bluestar.dreamhost.com
+ 1829  mysql -u root 
+ 1830  mysql -u root -p
+ 1831  cd Downloads
+ 1832  ssh madeeruser@bluestar.dreamhost.com
+ 1833  scp flask_survey.tar.gz  madeeruser@bluestar.dreamhost.com/home/madeeruser/madeer.ricardoarellano.cl/flask_survey.tar.gz
+ 1834  scp
+ 1835  scp flask_survey.tar.gz  madeeruser@bluestar.dreamhost.com/madeer.ricardoarellano.cl/flask_survey.tar.gz
+ 1836  scp -o
+ 1837  scp -h
+ 1838  scp --help
+ 1839  scp flask_survey.tar.gz  madeeruser@bluestar.dreamhost.com:/madeer.ricardoarellano.cl/flask_survey.tar.gz
+ 1840  scp flask_survey.tar.gz  madeeruser@bluestar.dreamhost.com:/home/madeeruser/madeer.ricardoarellano.cl/flask_survey.tar.gz
+ 1841  ssh madeeruser@bluestar.dreamhost.com
+ 1842  mysql -u madeeruser -p -h mysql.madeer.ricardoarellano.cl madeersurvey
+ 1843  virtualenvwrapper
+ 1844  workon
+ 1845  /usr/local/bin/virtualenvwrapper.sh
+ 1846  mkdir project_folder
+ 1847  cd project_folder
+ 1848  virtualenv venv
+ 1849  source venv/bin/activate
+ 1850  deactivate
+ 1851  sudo apt-get install python-dev
+ 1852  sudo apt-get mysql-python
+ 1853  sudo apt-get MySql-python
+ 1854  apt-get MySql-python
+ 1855  apt-get install MySql-python
+ 1856  sudo apt-get install MySql-python
+ 1857  sudo apt-get install mysql-python
+ 1858  source venv/bin/activate
+ 1859  cd ..
+ 1860  cd Downloads
+ 1861  cd flask_survey-master/
+ 1862  deactivate
+ 1863  mkvirtualenv survey_env -r requirements.txt
+ 1864  virtualenv survey_env
+ 1865  pip install -r requirement.txt
+ 1866  pip install -r requirements.txt
+ 1867  virtualenv survey_env
+ 1868  source survey_env/bin/activate
+ 1869  pip install -r requirements.txt
+ 1870  python manage.py initdb
+ 1871  python manage.py runserver
+ 1872  python manage.py initdb
+ 1873  deactivate
+ 1874  virtualenv survey_env2
+ 1875  source survey_env2/bin/activate
+ 1876  pip install -r requirements.txt
+ 1877  python manage.py initdb
+ 1878  python manage.py runserver
+ 1879  python manage.py initdb
+ 1880  python manage.py runserver
+ 1881  cd app/static
+ 1882  grunt
+ 1883  npm install
+ 1884  deactivate
+ 1885  npm install
+ 1886  nodejs
+ 1887  npm install -g grunt
+ 1888  sudo npm install -g grunt
+ 1889  sudo npm install -g grunt-cli
+ 1890  source survey_env2/bin/activate
+ 1891  cd ..
+ 1892  source survey_env2/bin/activate
+ 1893  sudo npm install
+ 1894  cd app/static/bootswatch/
+ 1895  sudo npm install
+ 1896  grunt
+ 1897  cd ..
+ 1898  python manage.py runserver
+ 1899  grunt
+ 1900  cd app/static/bootswatch/
+ 1901  grunt
+ 1902  cd ..
+ 1903  python manage.py runserver
+ 1904  python manage.py initdb
+ 1905  python manage.py runserver
+ 1906  python manage.py -c runserver
+ 1907  python manage.py -?
+ 1908  python manage.py -c CONFIG
+ 1909  python manage.py -c CONFIG runserver
+ 1910  python manage.py runserver
+ 1911  python manage.py initdb
+ 1912  python manage.py runserver
+ 1913  python manage.py initdb
+ 1914  python manage.py runserver
+ 1915  python manage.py initdb
+ 1916  python manage.py runserver
+ 1917  racket/bin/./drracket
+ 1918  racket/bin/./racket
+ 1919  racket/bin/./drracket
+ 1920  mysql -u madeeruser -p -h mysql.madeer.ricardoarellano.cl madeersurvey
+ 1921  cd Downloads/flask_survey-master
+ 1922  python manage.py runserver
+ 1923  virtualenv survey_env2
+ 1924  source survey_env2/bin/activate
+ 1925  python manage.py runserver
+ 1926  deactivate
+ 1927  cd
+ 1928  ssh madeeruser@bluestar.dreamhost.com
+ 1929  mysql -u madeeruser -p -h mysql.madeer.ricardoarellano.cl madeersurvey
+ 1930  racket/bin/./drracket
+ 1931  mysql -u madeeruser -p -h mysql.madeer.ricardoarellano.cl madeersurvey
+ 1932  cd usr
+ 1933  cs /usr/local/EnergyPlus-8-1-0/
+ 1934  cd /usr/local/EnergyPlus-8-1-0/
+ 1935  pwd
+ 1936  mysql -u madeeruser -p -h mysql.madeer.ricardoarellano.cl madeersurvey
+ 1937  racket/bin/./drracket
+ 1938  cd Downloads/flask_survey-master
+ 1939  virtualenv survey_env2
+ 1940  source survey_env2/bin/activate
+ 1941  python manage.py runserver
+ 1942  python manage.py initdb
+ 1943  python manage.py runserver
+ 1944  python manage.py initdb
+ 1945  python manage.py runserver
+ 1946  [A
+ 1947  python manage.py runserver
+ 1948  mysql -u root -p
+ 1949  exit
+ 1950  cd Downloads/flask_survey-master
+ 1951  source survey_env2/bin/activate
+ 1952  python manage.py runserver
+ 1953  grunt
+ 1954  cd bin
+ 1955  ls
+ 1956  cd survey_env2
+ 1957  ls
+ 1958  cd bin
+ 1959  ls
+ 1960  cd ..
+ 1961  cd app/static/bootswatch/
+ 1962  grunt
+ 1963  python manage.py runserver
+ 1964  cd ..
+ 1965  python manage.py runserver
+ 1966  cd app/static/bootswatch/
+ 1967  grunt
+ 1968  cd ..
+ 1969  python manage.py runserver
+ 1970  cd ..
+ 1971  python manage.py runserver
+ 1972  cd app/static/bootswatch/
+ 1973  grunt
+ 1974  cd ../../..
+ 1975  python manage.py runserver
+ 1976  cd app/static/bootswatch/
+ 1977  grunt
+ 1978  cd ../../..
+ 1979  python manage.py runserver
+ 1980  ssh madeeruser@bluestar.dreamhost.com
+ 1981  scp app.tar.gz  madeeruser@bluestar.dreamhost.com:/home/madeeruser/madeer.ricardoarellano.cl/flask_survey/app.tar.gz
+ 1982  ssh madeeruser@bluestar.dreamhost.com
+ 1983  exit
+ 1984  history > historial.txt
+ 1985  touch testfile.txt
+ 1986  mkdir testfolder
+ 1987  cd testfile.txt testfolder
+ 1988  cp testfile.txt testfolder
+ 1989  tar -zxvf testfolder.tar.gz
+ 1990  exit
+ 1991  mysql -u root -p
+ 1992  mysql -u madeeruser -p -h mysql.madeer.ricardoarellano.cl madeersurvey2
+ 1993  exit
+ 1994  mysql -u madeeruser -p -h mysql.madeer.ricardoarellano.cl madeersurvey2
+ 1995  cd Downloads/flask_survey-master/
+ 1996  source survey_env2/bin/activate
+ 1997  cd app/static/bootswatch/
+ 1998  grunt
+ 1999  cd ..
+ 2000  cd bootstrap
+ 2001  grunt
+ 2002  cd ..
+ 2003  cd bootswatch/
+ 2004  grunt
+ 2005  cd ..
+ 2006  cd bootstrap
+ 2007  ls
+ 2008  history >historial.txt

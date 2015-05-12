@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% from "macro.html" import render_field %}
+
+{% block content%}
+
+<div class="hidden-sm" style="margin:16px;"></div>
+
+<div class="page-header text-center hidden-xs">
+   <h3>Si estas registrado en Madeer, ingresa aqu&iacute;: </h3>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Por favor Ingresa</h3>
+        </div>
+        <div class="panel-body">
+          <form method="POST" action=".">
+            <fieldset>
+
+            {{ form.csrf_token }}
+            {{ render_field(form.email, class="form-control", placeholder="correo@inacapmail.cl ") }}
+            {{ render_field(form.password, class="form-control", placeholder="Clave") }}
+
+            <button type="submit" id="sign_in" class="btn btn-primary btn-block">Ingresar</button>
+
+            </fieldset>
+
+            <div class="pull-right">
+              <br>
+              <a href="/crear_cuenta"> ¿ Necesitas una cuenta ?</a>
+              <br>
+              <a href="/olvido_clave">¿ Olvidaste tu contrase&ntilde;a ?</a>
+            </div>
+
+          </form>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /.row -->
+
+{% endblock %}

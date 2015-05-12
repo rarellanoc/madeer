@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+{% from "macro.html" import render_input_ca %}
+
+{% block content %}
+
+<style type="text/css">
+  label.col-lg-3.control-label {
+    text-align: left;
+  }
+</style>
+
+<div class="row">
+<div class="well bs-component">
+
+<br>
+
+{% if nuevouser %}
+
+<legend> Gracias por contestar la primera encuesta </legend>
+
+
+<p>Puedes contestar las siguientes encuestas registrandote en Madeer</p>
+
+{% endif %}
+
+
+
+<legend>Crear una cuenta es sencillo :</legend>
+<p>
+
+Al usar tu correo de Inacap para tu nombre de usuario, considera que estas creando una nueva cuenta y que la contrase&ntilde;a debería ser  DISTINTA a la que ocupas habitualmente para los servicios que ofrece la red de Inacap.
+
+</p>
+
+
+
+<legend>Por favor lee el <a href="/informacion", target="_blank">Acuerdo</a>.</legend>
+<p>
+
+Al marcar Acepto y crear una cuenta, confirmas que has leido la información del Acuerdo, has resuelto dudas que puedas haber tenido y consientes participar en este estudio.
+
+</br>Por el momento , s&oacute;lo podrán participar de este estudio personas pertenecientes a la comunidad de Inacap.
+</p>
+
+
+<br>
+
+
+
+</div>
+
+
+    <div class="well bs-component">
+      <form method="POST" action="." class="form-horizontal">
+        {{ form.csrf_token }}
+        <fieldset>
+
+          <div class="col-md-7">
+            {{ render_input_ca(form.email, class="form-control", id="inputEmail", value=nuevouser , placeholder="tucorreo@inacapmail.cl" ) }}
+            {{ render_input_ca(form.password, class="form-control", id="inputPassword", placeholder="Minimo 8 caracteres") }}
+            {{ render_input_ca(form.confirm, class="form-control", id="confirmPassword", placeholder="Confirmar contraseña")}}
+          </div>
+
+          <div class="col-md-5">
+
+            <div class="radio">
+              <label class="checkbox">
+                <input type="checkbox" id="termschk" name="consent" onclick="validate()">
+                Estoy de acuerdo en las condiciones estipuladas arriba.
+              </label>
+            </div>
+
+            <div style="margin-top:72px;">
+              <button type="submit" id="sign_in" disabled="disabled" class="btn btn-block btn-primary">Crear cuenta</button>
+            </div>
+
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+
+<script>
+  function validate() {
+    var chk = document.getElementById('termschk');
+    if(chk.checked)
+      document.getElementById('sign_in').disabled = false;
+    else
+      document.getElementById('sign_in').disabled = true;
+  }
+</script>
+
+{% endblock %}

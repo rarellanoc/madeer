@@ -1,0 +1,66 @@
+{% extends "admin/layout.html" %}
+
+{% block content%}
+
+<div class="row">
+
+  <div class="col-md-3">
+      <p><a class="btn btn-primary btn-lg btn-block" href="{{ url_for('admin_survey1')}}" role="button">Encuesta 1</a></p>
+  </div>
+
+  <div class="col-md-3">
+      <p><a class="btn btn-primary btn-lg btn-block" href="{{ url_for('admin_survey2')}}" role="button">Encuesta Dise&ntilde;o</a></p>
+  </div>
+
+  <div class="col-md-3">
+      <p><a class="btn btn-primary btn-lg btn-block" href="{{ url_for('admin_survey3')}}" role="button">Encuesta Construcci&oacute;n</a></p>
+  </div>
+
+  <div class="col-md-3">
+      <p><a class="btn btn-default btn-lg btn-block" href="{{ url_for('admin_survey4')}}" role="button">Encuesta Applicaci&oacute;n</a></p>
+  </div>
+
+</div>
+
+
+<div class="page-header" >
+   <h1>Encuesta Applicaci&oacute;n
+      <small>Respuestas</small>
+   </h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-bordered scroll" cellspacing="0" width="100%" style="background-color:rgba(0, 0, 0, 0.3)">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Costos</th>
+          <th>Conforme</th>
+          <th>Participar</th>
+          <th>Difusion</th>
+
+
+        </tr>
+      </thead>
+      <tbody>
+        {% for survey in surveys %}
+        <tr>
+          <td>{{ survey.nuevouser4 }}</td>
+          <td>{{ survey.costos }}</td>
+          <td>{{ survey.conforme }}</td>
+          <td>{{ survey.difusion }}</td>
+          <td>{{ survey.participar }}</td>
+         
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+<style type="text/css">
+  th, td { white-space: nowrap; }
+</style>
+{% endblock %}

@@ -1,0 +1,41 @@
+
+{% from "macro.html" import render_field %}
+
+{% extends "admin/layout.html" %}
+
+{% block content %}
+
+<div class="page-header">
+   <h1>Edicion Index
+      
+   </h1>
+</div>
+
+
+<div class="jumbotron" >
+
+<form method="POST" action="." class="form form-horizontal">
+          {{ form.csrf_token }}
+          
+          
+          {{ render_field(form.navbar, class="form-control")}}
+	  {{ render_field(form.titulo, class="form-control")}}
+	  {{ render_field(form.subtitulo, class="form-control")}}
+	  {{ render_field(form.motd, class="form-control")}}
+	  {{ render_field(form.fecha_motd, class="form-control")}}
+
+
+          <div class="control-group">
+            <label class="control-label"></label>
+              <div class="controls">
+                <button type="submit" id="submit" class="btn btn-primary">Actualizar</button>
+              </div>
+          </div>
+
+        </form>
+
+
+</div>
+
+{% endblock %}
+

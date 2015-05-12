@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content%}
+<div class="jumbotron">
+	<h3><center>Gracias por completar esta parte de la encuesta, vuelve mas tarde para completar el resto</center></h3>
+
+
+{% endblock %}

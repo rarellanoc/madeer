@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content%}
+<div class="jumbotron">
+  {% from "macro.html" import render_field %}
+<!--  <h1>Welcome to the ECIT Survey</h1><br><br> -->
+  <h2 style="align:center">Propuesta</h2>
+
+<p>
+
+<a href="{{ url_for('consent')}}" target="_blank"> Queremos</a> generar una aplicaci&oacute;n orientada a dise&ntilde;adores y constructores en madera, generando una red que permita obtener beneficios en materiales, publicaci&oacute;nes y concretar dise&ntilde;os que sirvan tambi&eacute;n a las empresas productoras como parte de su cat&aacute;logo, potenciando la relaci&oacute;n comercial.
+
+</p>
+
+    <h3><a href="{{ url_for('index')}}">Volver</a></h3>
+    
+
+
+
+  <br>
+      </div>
+ {% endblock %}

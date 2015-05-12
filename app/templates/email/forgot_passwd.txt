@@ -1,0 +1,8 @@
+
+Has solicitado tu clave en la cuenta de madeer.ricardoarellano.cl
+
+Tu clave es:
+
+{{password}}
+
+Por favor ingresa en: {{url_for('login', _external = True)}} para continuar la encuesta.

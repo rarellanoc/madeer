@@ -1,0 +1,9 @@
+Estimado {{user.email}},
+
+Tu cuenta de usuario esta activa. Seguir el siguiente enlace te lleva de vuelta a la encuesta:
+
+{{url_for('login', _external = True)}}
+
+Saludos,
+
+Madeer admin
