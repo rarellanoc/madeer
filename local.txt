@@ -1,1 +1,3 @@
 colaborando para la crecion de la plataforma madeer.
+
+comunicando en tiempo real a traves de github.
