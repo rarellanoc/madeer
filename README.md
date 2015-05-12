@@ -1,3 +1,3 @@
 # madeer
 
-Proyecto diseño en madera
+Proyecto diseño en madera.
