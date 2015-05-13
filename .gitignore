@@ -1,0 +1,14 @@
+
+*.pyc
+*.log
+
+.idea
+components
+node_modules
+build
+_site
+*.lock
+tmp
+
+config.py
+newrelic.ini
