@@ -41,7 +41,7 @@ def create_acct():
 		mailuser = form.email.data
 		nusuario = mailuser.split('@')[0]
 			
-		return render_template ("dashboard.html", title="Panel", sector = sec, autor=aut, nusuario = nusuario, meta=meta)
+		return render_template ("dashboard.html", title="Panel", meta=meta)
 	return render_template('create_acct.html', title = "Create Account", form=form, meta=meta)
 
 @app.route('/nueva_clave/' , methods=['GET','POST'])
@@ -122,30 +122,18 @@ def index():
 
 
 @app.route('/panel/')
+@login_required
 def dashboard():
 	meta = Metaindex.query.order_by(Metaindex.id.desc()).first()
 
-	if current_user.is_authenticated():
-		g.user = current_user
-		mailuser = User.query.filter_by(userid=g.user.userid).first().email
-		surv1 = Survey1.query.filter_by(nuevouser1=mailuser).first()
-
-		nusuario = mailuser.split('@')[0]
-
-		if surv1 != None: 
-			return render_template ("dashboard.html", title="Panel", sector = surv1.sector, autor=surv1.autor, nusuario = nusuario, meta=meta)
-		else:
-			return render_template ("dashboard.html", title="Panel", sector = '', autor='', meta=meta)
-
-	else:
-		return render_template ("dashboard.html", title="Panel", sector ='', autor='', meta=meta)
+	return render_template ("dashboard.html", title="Panel", meta=meta)
 
 		
 
 @app.route('/gracias/')
 def gracias():
 	meta = Metaindex.query.order_by(Metaindex.id.desc()).first()
-	return render_template ("dashboard.html", title="Home", meta=meta)
+	return render_template ("gracias.html", title="Home", meta=meta)
 
 
 @app.route('/informacion/')

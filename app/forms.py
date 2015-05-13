@@ -13,7 +13,7 @@ def validate_login(form, field):
 
 
 class InscripcionUserForm(Form):
-    email = fields.TextField('', validators=[Required(), Email(), Regexp('[^@]+@[a-z]+\.[a-z]+', message=('No es un correo valido'))])
+    email = fields.TextField('', validators=[Required(), Email(), Regexp('[\w|.|-]*@\w*\.[\w|.]*', message=('No es un correo valido'))])
 
     def validate_email(self, field):
         if db.session.query(ListaUsuarios).filter_by(email=self.email.data).count() > 0:

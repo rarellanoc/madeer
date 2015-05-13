@@ -13,7 +13,7 @@
 <div class="col-md-12 jumbotron ">
 
 <h1></h1>
-<h2> Uniendo diseñadores y productores. </h2>
+<h2> Uniendo diseñadores y productores.</h2>
 
 
 
@@ -28,8 +28,8 @@
 
 <br/>
 <br/>
-<h6> Inscríbete en la lista.
-Te mantendremos informado </h6>
+<h6> Inscríbete en la lista de espera.
+Te mantendremos informado. </h6>
 
 <form method="POST" action="." class="form form-horizontal">
 	
@@ -68,7 +68,7 @@ Te mantendremos informado </h6>
 
 <br/>
 <br/>
- <button class="btn btn-primary">Madeer para  </button>
+ <button class="btn btn-primary">Madeer para Empresas </button>
 
 
 </div>

@@ -5,8 +5,10 @@
 
 <div class="hidden-sm" style="margin:16px;"></div>
 
-<div class="page-header text-center hidden-xs">
-   <h3>Si estas registrado en Madeer, ingresa aqu&iacute;: </h3>
+<div class="page-header text-center hidden-xs col-md-6 col-md-offset-3 panel">
+	<br/>
+   <h4>Si estas registrado en Madeer, ingresa aqu&iacute;: </h4>
+
 </div>
 
 <div class="row">
@@ -21,8 +23,8 @@
             <fieldset>
 
             {{ form.csrf_token }}
-            {{ render_field(form.email, class="form-control", placeholder="correo@inacapmail.cl ") }}
-            {{ render_field(form.password, class="form-control", placeholder="Password") }}
+            {{ render_field(form.email, class="form-control", placeholder="correo@mail.com ") }}
+            {{ render_field(form.password, class="form-control", placeholder="Clave") }}
 
             <button type="submit" id="sign_in" class="btn btn-primary btn-block">Ingresar</button>
 
